@@ -22,16 +22,11 @@ label {
   padding: 1em;
   overflow: auto;
 }
-@font-face {
-  font-family: 'narkis';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Tangerine'), url('http://example.com/tangerine.ttf') format('truetype');
-}
+
 #right-column {
   
   background-color: white;
-   font-family: font-family: 'Inconsolata', monospace;
+   font-family: 'narkiss_block_trialregular';
   column-count:4;
   column-rule-style: solid;
   overflow-x: scroll;
@@ -43,7 +38,7 @@ label {
   
 }
 .item {
-   font-family: 'Inconsolata', monospace;
+   font-family: 'narkiss_block_trialregular';
   padding: 1.5em;
 /*   cursor: pointer; */
   
@@ -55,7 +50,7 @@ label {
   height: 2em;
   font-weight: bold;
   line-height: 2;
-  font-family: 'narkis', serif;
+  font-family: 'narkiss_block_trialregular';
   
 }
 .item .details {
