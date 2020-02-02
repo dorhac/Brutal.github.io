@@ -80,7 +80,7 @@ else if (document.all) document.all[''+id+''].style.visibility = "visible"
 else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "visible"
  
 var random = 
-    Math.floor(Math.random() * (60 )) + +1;
+    Math.floor(Math.random() * (70 )) + +1;
 	
 var sr = 'images/'+random+'.jpg';
 $("img").attr("src",sr);
