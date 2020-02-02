@@ -5,13 +5,13 @@ $('#right-column').on('scroll', function (e) {
 
     if (scrollPosition > ($this.data('scroll-position') || 0)) {
         // Scrolling down
-        var threshold = $items.width() - $this.width() - $('.item:last-child').width();
+        var threshold = $this.width() *0.5;
       
       	if (scrollPosition > threshold) {
           	var $firstResult = $('.item:first-child');
             $items.append($firstResult);
-          	scrollPosition -= $firstResult.height();
-            $this.scrollTop(scrollPosition);
+          	scrollPosition -= $firstResult.width();
+            $this.scrollLeft(scrollPosition);
         }
     } else {
         // Scrolling up
@@ -19,8 +19,8 @@ $('#right-column').on('scroll', function (e) {
         if (scrollPosition < threshold) {
             var $lastResult = $('.item:last-child');
             $items.prepend($lastResult);
-          	scrollPosition += $lastResult.height();
-            $this.scrollTop(scrollPosition);
+          	scrollPosition += $lastResult.width();
+            $this.scrollLeft(scrollPosition);
         }
     }
   	$this.data('scroll-position', scrollPosition)
