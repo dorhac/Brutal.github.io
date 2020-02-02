@@ -1,249 +1,629 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Cyclical scrolling</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./stylesheet.css">
-<link rel="stylesheet" href="./style.css">
+	<meta charset="UTF-8">
+	<title>Inbal</title>
+	<link href="https://fonts.googleapis.com/css?family=Assistant|David+Libre|Miriam+Libre&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="./style.css">
+	
+</head>
+
+
+<body>
+
+<div class="column" id="right-column">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script src="script.js"></script>
+
+
+
+	<video autoplay muted id="myVideo"  >
+	  <source src="images/ins (Converted).mov" type="video/mp4">
+	</video>
+
+
+
+
+	<div id="items">
 	
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class=
-"column" id="right-column">
-  <div id="items">
-  
-    <div id="aruz" class="item">
-		<div class="main"> 
-                <p>
-ארוז קאלדו
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .5 </h1>
+אדובו פליפיני
+<span class="s">____ </span>
+אדובו = מרינדה
 <br>
+קומה 5
+<span class="s">_____ </span>
+ 25 ש"ח
+<div id="Style">
+<img  src="images/9.jpg">
+</div>
+                  
+		</summary>
+<p class="details">
+
+
+            המון תבלינים טובים עם חומץ שמתבשלים שעה ארוכה עם עוף 
+			</p>
+</details>
+
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .6 </h1>
+צ׳יפס עם קטשופ בננות 
+
+<br>
+קומה 4
+<span class="s">_____ </span>
+₪12 לקונוס
+ <div id="Style">
+<img  src="images/9.jpg">
+</div>                 
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .7 </h1>
+מקדולנד'ס
+<span class="s">_____ </span>
+גם להם מגיע
+<br>
+קומה 3
+<span class="s">____ </span>
+ 10-45  ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .8 </h1>
+קארי
+<span class="s">_ </span>
+קארי פליפיני הודי וישראלי ביחד
+<br>
+קומה 6
+<span class="s">___ </span>
+ 25 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .9 </h1>
+מקטי קבאלאן
+<span class="s">___ </span>
+המסעדה רק בקטן
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15-35 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .10 </h1>
+רטבי דגים מותססים
+<span class="s">__ </span>
+לאמיצים בלבד
+<br>
+קומה 4
+<span class="s">________ </span>
+ 10-20 ש"ח
+
+                  
+		</summary>
+<p class="details">
+	</p>
+</details>
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .11 </h1>
+דגים ופירות ים קפואים
+
+<br>
+קומה 4
+<span class="s">________ </span>
+15 ש"ח לקונוס    
+                  
+		</summary>
+<p class="details">
+
+
+טיגנו אותם, אבל הם היו קפואים 
+	</p>
+</details>
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .12 </h1>
+חטיפים מלוחים
+<span class="s">___ </span>
+בטעמים פחות שגרתיים
+<br>
+קומה 5
+<span class="s">_____ </span>
+3 שקיות ב 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+
+בטעמים של פירות ים, סלט טמפורה, עוף בטריאקי ועוד. 
+לא מאוד בריא אבל שווה ניסיון בתור קוריוז.
+	</p>
+</details>
+
+
+
+<details id="it1" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+ 
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+
+<details id="it2" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .2 </h1>
+ארוז קאלדו
+<span class="s">___ </span>
 מרק פיליפיני
 <br>
 קומה 4
-<br>
-20 ₪
-</p>
+<span class="s">________ </span>
+ 20 ש"ח
 
-		</div>
-      <div class="details">Details for item 2</div>
-    </div>
-    
-    <div id="halo" class="item">
-      <div class="main">
-          <p>
-הלו-הלו
-<br>
-קינוח פיליפיני 
-<br>                  
-קומה 4
-<br>
-15 ₪
-                  <br>
-                </p>
-      </div>
-	  
-	  
-		<div id="mami" class="item">
-      <div class="main">
-          <p>
-		  מרק מאמי
-		  <br>
+                  
+		</summary>
+<p class="details">
+
+
+מרק אורז סמיך על בסיס של ציר עוף, עם ביצה קשה, כנף עוף עסיסית שמתחבאת בפנים והמון שום קלוי. מדובר במרק מצוין ומשביע ממש, במיוחד אם מוסיפים לו קצת סויה וחומץ שום.          
+</p>
+</details>
+
+
+
+
+
+
+<details id="it3"  class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .3 </h1>
+מרק מאמי
+<span class="s">___ </span>
 מרק אטריות פיליפיני
 <br>
-קומה 4 
-<br>
-20 ₪
-                  <br>
-                </p>
-      </div>
-	  
-	  <div id="adobo" class="item">
-      <div class="main">
-          <p>
-		אדובו פליפיני
-		                  <br>
-
-אדובו = מרינדה 
-                  <br>
-
-המון תבלינים טובים עם חומץ שמתבשלים שעה ארוכה עם עוף 
-                  <br>
-
 קומה 4
-                  <br>
-23 ₪
-                  <br>
-                </p>
-      </div>
-	  
+<span class="s">_____ </span>
+ 20 ש"ח
 
-	  
-	  
-	  <div id="dim" class="item">
-      <div class="main">
-          <p>
-		  דים-סם
-		  <br>
-כיסונים ממולאי הפתעות מהונג-קונג
-<br>
-3ומה 4 
-<br>
-16 ₪
-                  <br>
-                </p>
-      </div>
+                  
+		</summary>
+<p class="details">
+
+
+	   מרק עם נודלס עבים, ציר בקר וקוביות בשר טעימות ולא ברורות.	</p>
+</details>
+
+<details id="it3"  class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
  
- 
- <div id="chips" class="item">
-      <div class="main">
-          <p>
-צ'יפס פלנטיין
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
 <br>
-מוגש עם גואקאמולי, שמנת חמוצה וסרירצ'ה
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .4 </h1>
+דים סאם
+<span class="s">___ </span>
+מסוגים שונים
+<br>
+קומה 3
+<span class="s">________ </span>
+ 10 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .13 </h1>
+     ממתקים סגולים
+	 
 <br>
 קומה 5 
-<br>
-12 ₪
-</p>
-      </div>
-	  
-	  
-	  
-	  <div id="mac" class="item">
-      <div class="main">
-          <p>
-מקדונלדס
-<br>
-גם להם מגיע...
-<br>
-קומה 5 
-<br>
-10-45 ₪
-</p>
-      </div>
-	  
-	  
-<div id="cury" class="item">
-      <div class="main">
-          <p>
-		  קארי
-<br>
-פיליפיני הודי ויהודי נפגשים באוטובוס
-<br>
-קומה 6 
-<br>
-25 ₪
-</p>
-      </div>
-          
+<span class="s">___ </span>
+מחיר לפי משקל
+                  
+		</summary>
+<p class="details">
 
+
+ממתקי ג'לי בטעמי פירות, עוגיות סגולות, סוכריות סגולות ואפילו גליליות סגולות.
+	</p>
+</details>
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
  
- <div id="kabalan" class="item">
-      <div class="main">
-          <p>
-		  מקטי קבאלאן
+                <h1>  .14 </h1>
+בטטה סגולה
+<span class="s">___ </span>
+עם גבינה או אבוקדו-מקיאטו
 <br>
-המסעדה רק בקטן
-<br>
-קומה 4 
-<br>
-15-35 ₪
-</p>
-      </div>
-	  
-	  
-	  
-<div id="manamana" class="item">
-      <div class="main">
-          <p>
-		  מנה חמה
-<br>
-פלסטיק חריף מקוריאה
-<br>
-קומה 4 
-<br>
-7 ₪
-</p>
-      </div>
+קומה 4
+<span class="s">________ </span>
+ 10 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+	</p>
+</details>
+
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
  
- <div id="balut" class="item">
-      <div class="main">
-          <p>
-		  באלוט
+                <h1>  .15 </h1>
+סוכריות תמרינדי מלוחות-חמוצות
 <br>
-		  אפרוח פיליפיני מבושל בקליפה
+קומה 6
+<span class="s">_____ </span>
+	8 ש"ח לשקית	
+                  
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .16 </h1>
+מנה חמה אסייתית וקוריאנית
+<span class="s">_ </span>
+הקוריאנית חריפה מאוד
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 7 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .17 </h1>
+מאפים קפואים במילויים מלוחים ומתוקים
 
 <br>
 קומה 5
-<br>
-13 ₪
-</p>
-      </div>
- 
-   <div id="item3" class="item">
-      <div class="main">Item 3</div>
-      <div class="details">Details for item 3</div>
-    </div>
-    <div id="item4" class="item">
-      <div class="main">Item 4</div>
-      <div class="details">Details for item 4</div>
-    </div>
-    <div id="item5" class="item">
-      <div class="main">Item 5</div>
-      <div class="details">Details for item 5</div>
-    </div>
-    <div id="item6" class="item">
-      <div class="main">Item 6</div>
-      <div class="details">Details for item 6</div>
-    </div>
-    <div id="item7" class="item">
-      <div class="main">Item 7</div>
-      <div class="details">Details for item 7</div>
-    </div>
-    <div id="item8" class="item">
-      <div class="main">Item 8</div>
-      <div class="details">Details for item 8</div>
-    </div>
-    <div id="item9" class="item">
-      <div class="main">Item 9</div>
-      <div class="details">Details for item 9</div>
-    </div>
-   <div id="item3" class="item">
-      <div class="main">Item 3</div>
-      <div class="details">Details for item 3</div>
-    </div>
-    <div id="item4" class="item">
-      <div class="main">Item 4</div>
-      <div class="details">Details for item 4</div>
-    </div>
-    <div id="item5" class="item">
-      <div class="main">Item 5</div>
-      <div class="details">Details for item 5</div>
-    </div>
-    <div id="item6" class="item">
-      <div class="main">Item 6</div>
-      <div class="details">Details for item 6</div>
-    </div>
-    <div id="item7" class="item">
-      <div class="main">Item 7</div>
-      <div class="details">Details for item 7</div>
-    </div>
-    <div id="item8" class="item">
-      <div class="main">Item 8</div>
-      <div class="details">Details for item 8</div>
-    </div>
-    <div id="item9" class="item">
-      <div class="main">Item 9</div>
-      <div class="details">Details for item 9</div>
-    </div>
-   
-  </div>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+<span class="s">_____ </span>
+ 8 ש"ח
 
+                  
+		</summary>
+<p class="details">
+
+
+	</p>
+</details>
+
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .18 </h1>
+ירקות ופירות
+<span class="s">___ </span>
+טרופיים
+<br>
+קומה 4
+<span class="s">____ </span>
+מחיר לפי משקל 
+                  
+		</summary>
+<p class="details">
+
+
+חלקם רגילים כמו בננות, תפוחי אדמה או אפונה ואפונת שלג טריות במחירים שלא תמצאו בשום מקום אחר, וחלקם אקזוטיים יותר, כמו פרחי בננה, עלי בננה טריים, בטטות סגולות, שורש קסאבה, פלנטיין, במיה תאילנדית, ביטר-מלון ועוד המון סוגי עלים שונים ומשונים. במקפיא של אחד הדוכנים תמצאו גם פירות קפואים כמו הדוריאן עז הריח מתאילנד, לונגן שמזכיר קצת ליצ'י, אננס, מנגו, פלחי קוקוס ועוד.
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .19 </h1>
+סטיקי רייס
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+<details id="???" class="item">
+<summary class="main" onMouseOver="ShowPicture(this,'Style',1)" onMouseOut="ShowPicture(this,'Style',0)">
+ 
+                <h1>  .1 </h1>
+הלו הלו
+<span class="s">___ </span>
+קינוח פיליפיני
+<br>
+קומה 4
+<span class="s">_____ </span>
+ 15 ש"ח
+
+                  
+		</summary>
+<p class="details">
+
+
+עם המון תוספות לא שגרתיות כמו שעועית ממותקת, ג'לי קוקוס בצבעים שונים, מחית בטטה מתוקה, חלב ממותק, פלאן ספרדי ועוד הפתעות. הוא מוזר, הוא מיוחד ושווה לנסות אותו
+	</p>
+</details>
+
+
+
+
+
+  
+  </div> 
+</div> 
+ 
+ 
+ 
+                    
+                    
+                  
 </body>
 </html>
