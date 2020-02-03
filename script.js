@@ -80,13 +80,13 @@ else if (document.all) document.all[''+id+''].style.visibility = "visible"
 else if (document.getElementById) document.getElementById(''+id+'').style.visibility = "visible"
  
 var random = 
-    Math.floor(Math.random() * (70 )) + +1;
+    Math.floor(Math.random() * (78 )) + +1;
 	
 var sr = 'images/'+random+'.jpg';
 $("img").attr("src",sr);
 
-$("img").css("top",Math.random() * (+1000)-500);
-$("img").css("left",Math.random() * (1000)-500);
+$("img").css("top",Math.random() * (400));
+$("img").css("left",Math.random() * (1500));
 }
 else
 if (Source=="0"){
